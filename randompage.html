@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./Assets/Logo.png" type="image/svg+xml" />
+    <link rel="stylesheet" href="randompage.css" />
+    <title>Meal of the day</title>
+  </head>
+  <body>
+    <div class="boxmain">
+      <h1>Meal of the Day ✨</h1>
+      <div id="meal-container">
+        <p id="meal-name">Loading...</p>
+        <img
+          class="meal-image"
+          id="meal-image-preview"
+          onclick="viewImage()"
+          style="cursor: pointer"
+        />
+        <div id="buttons-container">
+          <button class="comic-button" onclick="viewImage()">View Image</button>
+          <button class="comic-button" onclick="viewRecipe()">
+            View Recipe
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <a href="index.html"
+        ><button class="bn8"><i className="fa fa-home"></i> Home</button></a
+      >
+    </div>
+
+    <div id="image-modal" class="modal">
+      <span class="close" onclick="closeModal('image-modal')">&times;</span>
+      <img class="modal-content" id="meal-image" />
+    </div>
+
+    <div id="recipe-modal" class="modal">
+      <span class="close" onclick="closeModal('recipe-modal')">&times;</span>
+      <div class="recipe-box" id="recipe-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap");
+
+* {
+  font-family: Poppins;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bgimage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bgimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Logo styling */
+#logopng {
+  transform: translate(42vw, -3vh);
+  max-width: 14vw;
+  z-index: 2;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+}
+
+.fronttitle {
+  height: 5vw;
+  width: 5vw;
+  color: black;
+  z-index: 2;
+  top: 10vh;
+  left: 20vw;
+  overflow: hidden;
+}
+
+#fronttitle {
+  margin-top: 2vh;
+}
+
+#maintext {
+  position: absolute;
+  top: 29vh;
+  left: 12vh;
+}
+
+#subtext {
+  position: absolute;
+  top: 36vh;
+  left: 12vh;
+}
+
+/* Searchbox and Searchtext */
+#searchbox {
+  border-radius: 50px;
+  position: relative;
+  top: 0vh;
+  left: 133vh;
+  height: 30px;
+  width: 14vw;
+}
+
+#searchtext {
+  border-radius: 50px;
+  position: relative;
+  top: 5px;
+  left: 132vh;
+  height: 5vh;
+  width: 7vw;
+  font-size: 15px;
+  margin-bottom: 42px;
+}
+
+/* Buttonfront */
+#checkoutbtn {
+  background-color: #eee;
+  border: none;
+  font-size: 1.3rem;
+  width: 17em;
+  position: absolute;
+  top: 63vh;
+  left: 10vh;
+  border-radius: 1rem;
+  color: lightcoral;
+  box-shadow: 0 0.4rem #dfd9d9;
+  cursor: pointer;
+}
+
+#explorebtn {
+  background-color: #eee;
+  border: none;
+  font-size: 1.3rem;
+  width: 17em;
+  position: absolute;
+  top: 72vh;
+  left: 10vh;
+  border-radius: 1rem;
+  color: lightcoral;
+  box-shadow: 0 0.4rem #dfd9d9;
+  cursor: pointer;
+}
+button:active {
+  color: white;
+  box-shadow: 0 0.2rem #dfd9d9;
+  transform: translateY(0.2rem);
+}
+
+button:hover:not(:disabled) {
+  background: lightcoral;
+  color: white;
+  text-shadow: 0 0.1rem #bcb4b4;
+}
+
+button:disabled {
+  cursor: auto;
+  color: grey;
+}
+
+/* Media query */
+@media only screen and (max-width: 600px) {
+  body {
+    overflow: auto;
+  }
+
+  .bgimage img {
+    object-position: center top;
+  }
+
+  #logopng {
+    transform: translate(20vw, -1vh);
+    max-width: 61vw;
+  }
+
+  #maintext {
+    top: 40vh;
+    left: 1vh;
+    font-size: 1.5rem;
+  }
+
+  #subtext {
+    top: 45vh;
+    left: 1vh;
+    font-size: 1rem;
+  }
+
+  #checkoutbtn {
+    width: 80%;
+    font-size: 1rem;
+    top: 76vh;
+    left: 48%;
+    transform: translateX(-50%);
+  }
+
+  #explorebtn {
+    width: 80%;
+    font-size: 1rem;
+    top: 82vh;
+    left: 48%;
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Searched results</title>
+    <link rel="shortcut icon" href="./Assets/Logo.png" type="image/svg+xml" />
+    <link rel="stylesheet" href="results.css" />
+  </head>
+  <body>
+    <div>
+      <input id="searchText" type="text" />
+      <button id="searchButton">Search</button>
+    </div>
+    <div id="resultsContainer"></div>
+
+    <div class="modal" id="myModal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+    <div>
+      <a href="index.html"
+        ><button class="bn8"><i className="fa fa-home"></i> Home</button></a
+      >
+    </div>
+  </body>
+  <script src="results.js"></script>
+</html>
